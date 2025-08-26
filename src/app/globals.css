@@ -1,0 +1,229 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* StudyLens Design System - Modern educational app aesthetic */
+
+@layer base {
+  :root {
+    /* Base colors - Modern dark slate */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    /* Card components */
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary brand - Vibrant purple */
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 83% 68%;
+
+    /* Secondary - Electric blue */
+    --secondary: 217 91% 96%;
+    --secondary-foreground: 217 91% 20%;
+
+    /* Success - Emerald green */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Accent - Bright cyan */
+    --accent: 189 94% 93%;
+    --accent-foreground: 189 94% 20%;
+
+    /* Warning - Sunset orange */
+    --warning: 25 95% 53%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Muted tones */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    /* Destructive */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 262 83% 58%;
+
+    /* Modern gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(217 91% 58%) 30%, hsl(189 94% 58%) 70%, hsl(160 84% 39%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(240 4.8% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(189 94% 58%), hsl(160 84% 39%));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 53%), hsl(262 83% 58%));
+    
+    /* Modern shadows */
+    --shadow-primary: 0 20px 50px -12px hsl(262 83% 58% / 0.25);
+    --shadow-card: 0 4px 20px -4px hsl(240 5.9% 90% / 0.3);
+    --shadow-glow: 0 0 50px hsl(262 83% 68% / 0.4);
+    --shadow-accent: 0 10px 30px -8px hsl(189 94% 58% / 0.3);
+
+    /* Smooth animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-elastic: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 262 83% 68%;
+
+    /* Secondary - Electric blue dark */
+    --secondary: 217 91% 12%;
+    --secondary-foreground: 217 91% 85%;
+
+    /* Success - Emerald green dark */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    /* Accent - Bright cyan dark */
+    --accent: 189 94% 12%;
+    --accent-foreground: 189 94% 85%;
+
+    /* Warning - Sunset orange */
+    --warning: 25 95% 53%;
+    --warning-foreground: 0 0% 100%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 262 83% 58%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%), hsl(217 91% 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 38%) 0%, hsl(217 91% 38%) 30%, hsl(189 94% 38%) 70%, hsl(160 84% 29%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 10% 6%) 0%, hsl(240 3.7% 18%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(189 94% 38%), hsl(160 84% 29%));
+    --gradient-warm: linear-gradient(135deg, hsl(25 95% 43%), hsl(262 83% 48%));
+    
+    /* Dark mode shadows */
+    --shadow-primary: 0 20px 50px -12px hsl(262 83% 58% / 0.4);
+    --shadow-card: 0 4px 20px -4px hsl(240 3.7% 5% / 0.5);
+    --shadow-glow: 0 0 50px hsl(262 83% 68% / 0.3);
+    --shadow-accent: 0 10px 30px -8px hsl(189 94% 58% / 0.2);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom animations and utilities */
+@layer utilities {
+  /* 3D Flip Card Styles */
+  .flip-card {
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0.75rem;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Scroll animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-primary);
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
