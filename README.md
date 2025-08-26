@@ -127,11 +127,3 @@ export default function Example() {
 
 ---
 
-## 📌 PRÓXIMOS PASSOS
-
-- Documentar componentes existentes (`/components/ui`)  
-- Criar rotas dinâmicas no Next.js (`/app`)  
-- Configurar deploy (Vercel recomendado)  
-
----
-
