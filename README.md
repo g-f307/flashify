@@ -1,7 +1,7 @@
 
 # 📚 Flashify
 
-Aplicação **Flashify** migrada para **Next.js 14** com suporte a **TypeScript**, **shadcn/ui**, sistema de **toast notifications** e estrutura modular.  
+Aplicação **Flashify** utiliza o **Next.js 14** com suporte a **TypeScript**, **shadcn/ui**, sistema de **toast notifications** e estrutura modular.  
 O projeto foi pensado para ser escalável, moderno e pronto para produção.
 
 ---
