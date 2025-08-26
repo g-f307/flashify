@@ -56,8 +56,8 @@ O projeto foi pensado para ser escalável, moderno e pronto para produção.
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/studylens-nextjs-migrated.git
-cd studylens-nextjs-migrated
+git clone https://github.com/g-f307/flashify.git
+cd flashify
 ```
 
 ### 2. Instalar Dependências
